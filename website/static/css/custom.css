@@ -357,6 +357,7 @@ code {
 @media only screen and (max-width: 1400px) {
   .Block__Container {
     flex-direction: column;
+    overflow: hidden;
   }
 }
 
@@ -427,12 +428,12 @@ code {
 
 .Block__Title {
   margin: 16px 0;
-
   color: #fff;
   font-style: normal;
   font-weight: bold;
   font-size: 54px;
   line-height: 56px;
+  word-break: break-word;
 }
 
 .Block__Paragraph {

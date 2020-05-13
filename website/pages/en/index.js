@@ -124,10 +124,10 @@ in one place, your engineers will always know where to find the right tool for t
 
         <ActionBlock className="stripe-top bg-teal">
           <ActionBlock.Title>
-            Request a live demo
+            Subscribe to our newsletter
           </ActionBlock.Title>
-          <ActionBlock.Link href='https://docs.google.com/forms/d/e/1FAIpQLSel10NmA_UXN3uO0cGHRfanLYz94p8LCu70GG7vK2LFb2AOkQ/viewform'>
-            Get in Touch
+          <ActionBlock.Link href='https://mailchi.mp/spotify/backstage-community'>
+            Subscribe
           </ActionBlock.Link>
         </ActionBlock>
       </main>
