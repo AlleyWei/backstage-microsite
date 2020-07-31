@@ -10,6 +10,7 @@ const Components = require(`${process.cwd()}/core/Components.js`);
 const Block = Components.Block;
 const ActionBlock = Components.ActionBlock;
 const Breakpoint = Components.Breakpoint;
+const BulletLine = Components.BulletLine;
 
 class Index extends React.Component {
   render() {
@@ -48,50 +49,137 @@ class Index extends React.Component {
           </Block.Container>
         </Block>
 
-        <Block className="stripe-top bg-teal-grey" wrapped>
+
+        <Block className="stripe-top bg-teal-top-right" wrapped>
           <Block.Container wrapped>
             <Block.TextBox wide>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
               <Block.Title small>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
             <Block.TextBox small>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
-              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
-              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+              <BulletLine />
+              <Block.SmallTitle small>Manage all your software, all in one place </Block.SmallTitle>
+              <Block.Paragraph>Backstage makes it easy for one team to manage 10 services — and makes it possible for your company to manage thousands of them</Block.Paragraph>
             </Block.TextBox>
             <Block.TextBox small>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
-              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
-              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
-            </Block.TextBox>
-
-            <Block.TextBox small>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
-              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
-              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+              <BulletLine />
+              <Block.SmallTitle small>A uniform overview</Block.SmallTitle>
+              <Block.Paragraph>Every team can see all the services they own and related resources (deployments, data pipelines, pull request status, etc.)</Block.Paragraph>
             </Block.TextBox>
 
             <Block.TextBox small>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
-              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
-              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+              <BulletLine />
+              <Block.SmallTitle small>Metadata on tap</Block.SmallTitle>
+              <Block.Paragraph>All that information can be shared with plugins inside Backstage to enable other management features, like resource monitoring and testing</Block.Paragraph>
             </Block.TextBox>
 
             <Block.TextBox small>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
-              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
-              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+              <BulletLine />
+              <Block.SmallTitle small>Not just services</Block.SmallTitle>
+              <Block.Paragraph>Libraries, websites, ML models — you name it, Backstage knows all about it, including who owns it, dependencies, and more</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Discoverability & accountability</Block.SmallTitle>
+              <Block.Paragraph>No more orphan software hiding in the dark corners of your tech stack</Block.Paragraph>
             </Block.TextBox>
           </Block.Container>
         </Block>
 
         <ActionBlock className="stripe bg-teal">
           <ActionBlock.Title>
-            See for yourself
+            Learn more about the service catalog
           </ActionBlock.Title>
           <ActionBlock.Link href={`${baseUrl}demos`}>
             Demos
+          </ActionBlock.Link>
+        </ActionBlock>
+
+        <Block className="stripe-top bg-teal-bottom" wrapped>
+          <Block.Container wrapped>
+            <Block.TextBox wide>
+              <BulletLine />
+              <Block.Subtitle>Backstage software Templates <span>(alpha)</span></Block.Subtitle>
+              <Block.Title small>Standards can set you free</Block.Title>
+            </Block.TextBox>
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Like automated getting started guides</Block.SmallTitle>
+              <Block.Paragraph>Using templates, engineers can spin up a new microservice with your organization’s best practices built-in, right from the start</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Push-button deployment</Block.SmallTitle>
+              <Block.Paragraph>Click a button to create a Spring Boot project with your repo automatically configured on GitHub and your CI already running the first build</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Built to your standards</Block.SmallTitle>
+              <Block.Paragraph>Go instead of Java? CircleCI instead of Jenkins? Serverless instead of Kubernetes? GCP instead of AWS? Customize your recipes with your best practices baked-in</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Golden Paths pave the way</Block.SmallTitle>
+              <Block.Paragraph>When the right way is also the easiest way, engineers get up and running faster — and more safely</Block.Paragraph>
+            </Block.TextBox>
+            <img src={`${baseUrl}img/cards.png`} />
+          </Block.Container>
+        </Block>
+
+        <ActionBlock className="stripe bg-teal">
+          <ActionBlock.Title>
+            Build your own software templates
+          </ActionBlock.Title>
+          <ActionBlock.Link href={`${baseUrl}demos`}>
+            Contribute
+          </ActionBlock.Link>
+        </ActionBlock>
+
+        <Block className="stripe-top bg-teal-bottom" wrapped>
+          <Block.Container wrapped>
+            <Block.TextBox wide>
+              <BulletLine />
+              <Block.Subtitle>Backstage software Templates <span>(alpha)</span></Block.Subtitle>
+              <Block.Title small>Standards can set you free</Block.Title>
+            </Block.TextBox>
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Like automated getting started guides</Block.SmallTitle>
+              <Block.Paragraph>Using templates, engineers can spin up a new microservice with your organization’s best practices built-in, right from the start</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Push-button deployment</Block.SmallTitle>
+              <Block.Paragraph>Click a button to create a Spring Boot project with your repo automatically configured on GitHub and your CI already running the first build</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Built to your standards</Block.SmallTitle>
+              <Block.Paragraph>Go instead of Java? CircleCI instead of Jenkins? Serverless instead of Kubernetes? GCP instead of AWS? Customize your recipes with your best practices baked-in</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <BulletLine />
+              <Block.SmallTitle small>Golden Paths pave the way</Block.SmallTitle>
+              <Block.Paragraph>When the right way is also the easiest way, engineers get up and running faster — and more safely</Block.Paragraph>
+            </Block.TextBox>
+            <img src={`${baseUrl}img/cards.png`} />
+          </Block.Container>
+        </Block>
+
+        <ActionBlock className="stripe bg-teal">
+          <ActionBlock.Title>
+            Subscribe to our newsletter
+          </ActionBlock.Title>
+          <ActionBlock.Subtitle>TechDocs is our most used feature at Spotify. Be the first to know when the open source version ships.</ActionBlock.Subtitle>
+          <ActionBlock.Link href={`${baseUrl}demos`}>
+            Subscribe
           </ActionBlock.Link>
         </ActionBlock>
 

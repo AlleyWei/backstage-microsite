@@ -36,6 +36,8 @@ Block.Subtitle = simpleComponent('h1', 'Block__Subtitle')
 Block.SmallTitle = simpleComponent('h2', 'Block__SmallTitle')
 Block.SmallestTitle = simpleComponent('h3', 'Block__SmallestTitle')
 
+const BulletLine = simpleComponent('div', 'BulletLine')
+
 Block.Paragraph = simpleComponent('p', 'Block__Paragraph')
 Block.LinkButton = simpleComponent('a', 'Block__LinkButton')
 Block.QuoteContainer = simpleComponent('div', 'Block__QuoteContainer')
@@ -56,6 +58,7 @@ Block.Graphic = props => {
 
 const ActionBlock = simpleComponent('section', 'ActionBlock')
 ActionBlock.Title = simpleComponent('h1', 'ActionBlock__Title')
+ActionBlock.Subtitle = simpleComponent('h2', 'ActionBlock__Subtitle')
 ActionBlock.Link = simpleComponent('a', 'ActionBlock__Link')
 
 const Breakpoint = ({ narrow, wide }) => (
@@ -68,5 +71,6 @@ const Breakpoint = ({ narrow, wide }) => (
 module.exports = {
     Block,
     ActionBlock,
-    Breakpoint
+    Breakpoint,
+    BulletLine
 }
