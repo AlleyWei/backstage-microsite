@@ -18,34 +18,71 @@ class Index extends React.Component {
 
     return (
       <main className="MainContent">
-        <Block small className="stripe-bottom bg-black-grey">
+        <Block small className="bg-black-grey">
           <Block.Container>
             <Block.TextBox>
-              <Block.Title>Happy developers make happy code.</Block.Title>
-              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
-              <Block.LinkButton href={"https://github.com/spotify/backstage"}>Go to GitHub</Block.LinkButton>
+              <Block.Title>An open platform for building developer portals</Block.Title>
+              <Block.Paragraph>Powered by a centralized service catalog, Backstage restores order to your infrastructure. So your product teams can ship high-quality code quickly — without compromising autonomy.
+</Block.Paragraph>
+              <Block.LinkButton href={"https://github.com/spotify/backstage"}>GitHub</Block.LinkButton>
             </Block.TextBox>
             <Block.Graphics>
-              <Block.Graphic x={-12.5} y={16} width={120} src={`${baseUrl}img/laptop.svg`}/>
-              <Block.Graphic x={5.8} y={20} width={88} src={`${baseUrl}img/screen.gif`}/>
+              <Block.Graphic x={-12.5} y={16} width={120} src={`${baseUrl}img/laptop.svg`} />
+              <Block.Graphic x={5.8} y={20} width={88} src={`${baseUrl}img/screen.gif`} />
             </Block.Graphics>
           </Block.Container>
         </Block>
 
-        <Block className="stripe bg-dots">
-          <Block.Container reversed>
+        <Block small className="stripe-top bg-black">
+          <Block.Container>
             <Block.TextBox>
-              <Block.Title>Less wrangling, more building.</Block.Title>
-              <Block.Paragraph>The philosophy behind Backstage is simple: Don't expose your engineers to the full complexity of your infrastructure tooling. Engineers should be shipping code — not figuring out a whole new toolset every time they want to implement the basics.</Block.Paragraph>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>The Speed Paradox</Block.SmallTitle>
+              <Block.Paragraph>At Spotify, we’ve always believed in the speed and ingenuity that comes from having autonomous development teams. But as we learned firsthand, the faster you grow, the more fragmented and complex your software ecosystem becomes. And then everything slows down again.</Block.Paragraph>
             </Block.TextBox>
-            <Block.Graphics style={{margin: '0 100px'}}>
-              <Breakpoint
-                wide={<Block.Graphic x={-30} y={5} width={158} src={`${baseUrl}img/logos-background.svg`}/>}
-                narrow={<div className='logos-mobile-background'/>}
-              />
-              <Block.Graphic x={20} y={10} width={60} src={`${baseUrl}img/logos.svg`}/>
-              <Breakpoint narrow={<Block.Graphic x={0} y={85} width={100} src={`${baseUrl}img/logos-signature.svg`}/>}/>
-            </Block.Graphics>
+            <Block.TextBox>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>The Standards Paradox</Block.SmallTitle>
+              <Block.Paragraph>By centralizing services and standardizing your tooling, Backstage streamlines your development environment from end to end. Instead of restricting autonomy, standardization frees your engineers from infrastructure complexity. So you can return to building and scaling, quickly and safely.</Block.Paragraph>
+            </Block.TextBox>
+          </Block.Container>
+        </Block>
+
+        <Block className="stripe-top bg-teal-grey" wrapped>
+          <Block.Container wrapped>
+            <Block.TextBox wide>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
+              <Block.Title small>Build an ecosystem, not a wilderness</Block.Title>
+            </Block.TextBox>
+            <Block.TextBox small>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
+              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+            </Block.TextBox>
+            <Block.TextBox small>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
+              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
+              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
+              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+            </Block.TextBox>
+
+            <Block.TextBox small>
+              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <Block.SmallTitle small>Happy developers make happy code.</Block.SmallTitle>
+              <Block.Paragraph>Meet the first open-source developer portal that puts the developer experience first. With a unified frontend for all your infrastructure tooling, Backstage gets developers up and running faster, which makes them happier. And a happier developer is a more productive developer.</Block.Paragraph>
+            </Block.TextBox>
           </Block.Container>
         </Block>
 
@@ -67,8 +104,8 @@ in one place, your engineers will always know where to find the right tool for t
             </Block.TextBox>
             <Block.Graphics>
               <Breakpoint
-                wide={<Block.Graphic x={-5} y={-5} width={132} src={`${baseUrl}img/plugin.svg`}/>}
-                narrow={<Block.Graphic x={-23.5} y={-5} width={132} src={`${baseUrl}img/plugin-mobile.svg`}/>}
+                wide={<Block.Graphic x={-5} y={-5} width={132} src={`${baseUrl}img/plugin.svg`} />}
+                narrow={<Block.Graphic x={-23.5} y={-5} width={132} src={`${baseUrl}img/plugin-mobile.svg`} />}
               />
             </Block.Graphics>
           </Block.Container>
@@ -81,7 +118,7 @@ in one place, your engineers will always know where to find the right tool for t
               <Block.Paragraph>Why shouldn’t developer tools provide a first-class user experience? After all, engineers are people, too. Backstage is elegantly designed to make a diverse ecosystem of plugins, components, and frameworks easier to access and easier to use. How? By doing what other developer portals forget to consider: the developer on the other end of the portal.</Block.Paragraph>
             </Block.TextBox>
             <Block.Graphics>
-              <Block.Graphic x={-5} y={-5} width={120} src={`${baseUrl}img/developers.svg`}/>
+              <Block.Graphic x={-5} y={-5} width={120} src={`${baseUrl}img/developers.svg`} />
             </Block.Graphics>
           </Block.Container>
         </Block>
@@ -102,7 +139,7 @@ in one place, your engineers will always know where to find the right tool for t
               <Block.Paragraph>As a fully extensible platform, Backstage enables infrastructure teams to integrate new ideas from wherever they come from — whether that’s the open source community at large or the people who understand your infrastructure pain points the best: your own engineers. This extensibility is one reason why Backstage wasn’t just adopted, but embraced by Spotify’s own engineers.</Block.Paragraph>
             </Block.TextBox>
             <Block.Graphics>
-              <Block.Graphic x={-20} y={-10} width={140} src={`${baseUrl}img/open-platform.svg`}/>
+              <Block.Graphic x={-20} y={-10} width={140} src={`${baseUrl}img/open-platform.svg`} />
             </Block.Graphics>
           </Block.Container>
         </Block>
@@ -115,8 +152,8 @@ in one place, your engineers will always know where to find the right tool for t
             </Block.TextBox>
             <Block.Graphics>
               <Breakpoint
-                wide={<Block.Graphic x={-33} y={-15} width={150} src={`${baseUrl}img/compliance.svg`}/>}
-                narrow={<Block.Graphic x={-25} y={-40} width={150} src={`${baseUrl}img/compliance.svg`}/>}
+                wide={<Block.Graphic x={-33} y={-15} width={150} src={`${baseUrl}img/compliance.svg`} />}
+                narrow={<Block.Graphic x={-25} y={-40} width={150} src={`${baseUrl}img/compliance.svg`} />}
               />
             </Block.Graphics>
           </Block.Container>

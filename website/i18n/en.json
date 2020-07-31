@@ -4,52 +4,7 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "An open platform for building developer portals",
-    "docs": {
-      "apis": {
-        "title": "API Overview",
-        "sidebar_label": "API Overview"
-      },
-      "components": {
-        "title": "Building components",
-        "sidebar_label": "Building components"
-      },
-      "create-plugin-api-v2": {
-        "title": "Create Plugin API v2",
-        "sidebar_label": "Create Plugin API v2"
-      },
-      "developing-a-plugin": {
-        "title": "Developing a plugin",
-        "sidebar_label": "Developing a plugin"
-      },
-      "errors-notifications": {
-        "title": "Errors and Notifications",
-        "sidebar_label": "Errors and Notifications"
-      },
-      "exploring-the-backend-with-graphiql": {
-        "title": "Querying with GraphiQL",
-        "sidebar_label": "Querying with GraphiQL"
-      },
-      "getting-started": {
-        "title": "Getting started with Backstage",
-        "sidebar_label": "Getting Started"
-      },
-      "layout-components": {
-        "title": "Layout components",
-        "sidebar_label": "Layout components"
-      },
-      "plugin-api": {
-        "title": "Plugin API",
-        "sidebar_label": "Plugin API"
-      },
-      "plugin-structure": {
-        "title": "Plugin structure",
-        "sidebar_label": "Plugin structure"
-      },
-      "testing-with-jest": {
-        "title": "Testing",
-        "sidebar_label": "Testing"
-      }
-    },
+    "docs": {},
     "links": {
       "GitHub": "GitHub",
       "Blog": "Blog",
