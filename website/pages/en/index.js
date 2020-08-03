@@ -35,9 +35,9 @@ class Index extends React.Component {
         </Block>
 
         <Block small className="stripe-top bg-black">
-          <Block.Container>
+          <Block.Container wrapped>
             <Block.TextBox>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+
               <Block.SmallTitle small>The Speed Paradox</Block.SmallTitle>
               <Block.Paragraph>At Spotify, we’ve always believed in the speed and ingenuity that comes from having autonomous development teams. But as we learned firsthand, the faster you grow, the more fragmented and complex your software ecosystem becomes. And then everything slows down again.</Block.Paragraph>
             </Block.TextBox>
@@ -54,7 +54,7 @@ class Index extends React.Component {
           <Block.Container wrapped>
             <Block.TextBox wide>
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
-              <Block.Title small>Build an ecosystem, not a wilderness</Block.Title>
+              <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
             <Block.TextBox small>
               <BulletLine />
@@ -66,7 +66,7 @@ class Index extends React.Component {
               <Block.SmallTitle small>A uniform overview</Block.SmallTitle>
               <Block.Paragraph>Every team can see all the services they own and related resources (deployments, data pipelines, pull request status, etc.)</Block.Paragraph>
             </Block.TextBox>
-
+            <Block.Image wide src="/img/components-with-filter.png" />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Metadata on tap</Block.SmallTitle>
@@ -83,6 +83,8 @@ class Index extends React.Component {
               <BulletLine />
               <Block.SmallTitle small>Discoverability & accountability</Block.SmallTitle>
               <Block.Paragraph>No more orphan software hiding in the dark corners of your tech stack</Block.Paragraph>
+            </Block.TextBox>
+            <Block.TextBox small>
             </Block.TextBox>
           </Block.Container>
         </Block>

@@ -30,7 +30,7 @@ Block.Container = simpleComponent('div', 'Block__Container', ['reversed', 'wrapp
 Block.TitleBox = simpleComponent('h1', 'Block__TitleBox', ['large'])
 Block.TextBox = simpleComponent('div', 'Block__TextBox', ['wide', 'small'])
 
-Block.Title = simpleComponent('h1', 'Block__Title')
+Block.Title = simpleComponent('h1', 'Block__Title', ['half'])
 Block.Subtitle = simpleComponent('h1', 'Block__Subtitle')
 
 Block.SmallTitle = simpleComponent('h2', 'Block__SmallTitle')
@@ -54,6 +54,15 @@ Block.Graphic = props => {
     const { x = 0, y = 0, width = 0, src, className = '' } = props
     const style = Object.assign({ left: `${x}%`, top: `${y}%`, width: `${width}%` }, props.style)
     return <img src={src} alt="" {...props} style={style} className={`Block__Graphic ${className}`} />
+}
+
+Block.Image = props => {
+    /* Coordinates and size are in % of graphics container size, e.g. width={50} is 50% of parent width */
+    const style = {
+        background: `url(${props.src})`, backgroundSize: "594px 435.5px",
+        width: "594px", height: "435.5px", margin: "-320px 105px 0 10px"
+    }
+    return <div style={{ ...style, ...(props.style || {}) }} className={`Block__Image${props.wide ? '--wide' : props.narrow ? '--narrow' : ''}`} />
 }
 
 const ActionBlock = simpleComponent('section', 'ActionBlock')
