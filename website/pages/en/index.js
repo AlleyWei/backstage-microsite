@@ -52,7 +52,7 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-top-right" wrapped>
           <Block.Container wrapped>
-            <img width="190" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
+            <img style={{ marginLeft: "-10px" }} width="190" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
             <Block.TextBox wide>
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
@@ -69,7 +69,7 @@ class Index extends React.Component {
               <Block.Paragraph>Every team can see all the services they own and related resources (deployments, data pipelines, pull request status, etc.)</Block.Paragraph>
             </Block.TextBox>
             <Block.Image wide style={{
-              background: `url(/img/components-with-filter.png)`, backgroundSize: "594px 435.5px",
+              background: `url(${baseUrl}img/components-with-filter.png)`, backgroundSize: "594px 435.5px",
               width: "594px", height: "435.5px", margin: "-380px 105px 0 10px"
             }} />
             <Block.TextBox small>
@@ -105,7 +105,7 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
-            <img width="190" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
+            <img style={{ marginLeft: "-30px" }} width="190" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
             <Block.TextBox wide>
               <Block.Subtitle>Backstage software Templates <span>(alpha)</span></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>

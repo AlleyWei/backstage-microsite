@@ -471,7 +471,7 @@ code {
 
 .Block__TextBox {
   width: 530px;
-  padding: 0 20px 40px 20px;
+  padding: 0 20px;
   margin: 40px 0;
   flex: 0 0 auto;
   align-self: flex-start;
@@ -571,7 +571,7 @@ code {
 }
 
 .Block__Title {
-  margin: 40px 0;
+  margin: 0 0 40px 0;
   /* margin: 16px 0;
   color: #fff;
   font-style: normal;
@@ -899,4 +899,7 @@ code {
 
 .post p {
   font-size: 115%;
+}
+.Block__Container img {
+  margin: 0 auto 0 -60px;
 }
