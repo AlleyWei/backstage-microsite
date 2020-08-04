@@ -37,23 +37,22 @@ class Index extends React.Component {
         <Block small className="stripe-top bg-black">
           <Block.Container wrapped>
             <Block.TextBox>
-              <img width="190" src={`${baseUrl}animations/backstage-speed-paradox-7.gif`} />
+              <img className="Block__GIF" src={`${baseUrl}animations/backstage-speed-paradox-7.gif`} />
               <Block.SmallTitle small>The Speed Paradox</Block.SmallTitle>
               <Block.Paragraph>At Spotify, we’ve always believed in the speed and ingenuity that comes from having autonomous development teams. But as we learned firsthand, the faster you grow, the more fragmented and complex your software ecosystem becomes. And then everything slows down again.</Block.Paragraph>
             </Block.TextBox>
             <Block.TextBox>
-              <img width="190" src={`${baseUrl}animations/backstage-standards-paradox-4.gif`} />
+              <img className="Block__GIF" src={`${baseUrl}animations/backstage-standards-paradox-4.gif`} />
               <Block.SmallTitle small>The Standards Paradox</Block.SmallTitle>
               <Block.Paragraph>By centralizing services and standardizing your tooling, Backstage streamlines your development environment from end to end. Instead of restricting autonomy, standardization frees your engineers from infrastructure complexity. So you can return to building and scaling, quickly and safely.</Block.Paragraph>
             </Block.TextBox>
           </Block.Container>
         </Block>
 
-
         <Block className="stripe-top bg-teal-top-right" wrapped>
           <Block.Container wrapped>
-            <img style={{ marginLeft: "-10px" }} width="190" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
-            <Block.TextBox wide>
+            <Block.TextBox wide>            <img className="Block__GIF" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
+
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
@@ -99,17 +98,19 @@ class Index extends React.Component {
             Learn more about the service catalog
           </ActionBlock.Title>
           <ActionBlock.Link href={`${baseUrl}demos`}>
-            Demos
+            Read
           </ActionBlock.Link>
         </ActionBlock>
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
-            <img style={{ marginLeft: "-30px" }} width="190" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
             <Block.TextBox wide>
+              <img className="Block__GIF" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
+
               <Block.Subtitle>Backstage software Templates <span>(alpha)</span></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>
             </Block.TextBox>
+            <Breakpoint narrow={<img src={`${baseUrl}img/spring-boot-service.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Like automated getting started guides</Block.SmallTitle>
@@ -133,7 +134,6 @@ class Index extends React.Component {
               <Block.SmallTitle small>Golden Paths pave the way</Block.SmallTitle>
               <Block.Paragraph>When the right way is also the easiest way, engineers get up and running faster — and more safely</Block.Paragraph>
             </Block.TextBox>
-            <img style={{ margin: "auto" }} src={`${baseUrl}img/cards.png`} />
           </Block.Container>
         </Block>
 
@@ -148,12 +148,17 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
-            <img width="190" src={`${baseUrl}animations/backstage-techdocs-icon-1.gif`} />
 
             <Block.TextBox wide>
+              <img className="Block__GIF" src={`${baseUrl}animations/backstage-techdocs-icon-1.gif`} />
+
               <Block.Subtitle>Backstage TechDocs <span>(Coming Soon)</span></Block.Subtitle>
               <Block.Title small>Docs like code</Block.Title>
             </Block.TextBox>
+            <Breakpoint narrow={<>
+              <img style={{ margin: "auto" }} src={`${baseUrl}img/techdocs.png`} />
+              <img style={{ margin: "auto" }} src={`${baseUrl}img/code.png`} />
+            </>} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Free documentation</Block.SmallTitle>
@@ -177,7 +182,8 @@ class Index extends React.Component {
               <Block.SmallTitle small>Easy to find and use</Block.SmallTitle>
               <Block.Paragraph>Since all your documentation is in Backstage, finding any TechDoc is just a search query away</Block.Paragraph>
             </Block.TextBox>
-            <img width="80%" style={{ margin: "auto" }} src={`${baseUrl}img/docs-like-code.png`} />
+            <Breakpoint wide={<img style={{ margin: "auto" }} src={`${baseUrl}img/docs-like-code.png`} />
+            } />
           </Block.Container>
         </Block>
 
@@ -193,11 +199,14 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
-            <img width="190" src={`${baseUrl}animations/backstage-plugin-icon-2.gif`} />
             <Block.TextBox wide>
+              <img className="Block__GIF" src={`${baseUrl}animations/backstage-plugin-icon-2.gif`} />
+
               <Block.Subtitle>Customize Backstage with plugins</Block.Subtitle>
               <Block.Title small>An app store for your infrastructure</Block.Title>
             </Block.TextBox>
+            <Breakpoint
+              narrow={<img src={`${baseUrl}img/lighthouse.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Add functionality</Block.SmallTitle>
@@ -221,7 +230,10 @@ class Index extends React.Component {
               <Block.SmallTitle small>Share with the community</Block.SmallTitle>
               <Block.Paragraph>Building open source plugins contributes to the entire Backstage ecosystem, which benefits everyone</Block.Paragraph>
             </Block.TextBox>
-            <img src={`${baseUrl}img/cards.png`} />
+
+            <Breakpoint wide={<img src={`${baseUrl}img/techs.png`} />}
+            />
+
           </Block.Container>
         </Block>
 

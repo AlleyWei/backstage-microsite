@@ -561,6 +561,7 @@ code {
     word-break: keep-all;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 10px;
   }
   .Block__Subtitle span {
     text-align: start;
@@ -589,6 +590,7 @@ code {
     word-break: keep-all;
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 20px;
   }
 }
 
@@ -663,6 +665,14 @@ code {
   margin-bottom: 60px;
 }
 
+@media only screen and (max-width: 485px) {
+  .Block__Paragraph {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+}
+
 .Block__LinkButton {
   padding: 14px 0;
   width: 176px;
@@ -678,6 +688,16 @@ code {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+}
+
+.Block__Title:first-child {
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Title:first-child {
+    margin-top: 40px;
+  }
 }
 
 .Block__LinkButton--stretch {
@@ -696,6 +716,7 @@ code {
   .Block__LinkButton {
     align-self: center;
     margin: auto;
+    width: 265px;
   }
 }
 
@@ -834,6 +855,12 @@ code {
   color: #000000;
 }
 
+@media only screen and (max-width: 485px) {
+  .ActionBlock__Link {
+    width: 265px;
+  }
+}
+
 .Breakpoint--narrow {
   display: none;
 }
@@ -862,7 +889,7 @@ code {
 
 @media only screen and (max-width: 1430px) {
   .Block__Image--narrow {
-    display: contents;
+    display: block;
   }
 
   .Block__Image--wide {
@@ -900,6 +927,18 @@ code {
 .post p {
   font-size: 115%;
 }
-.Block__Container img {
-  margin: 0 auto 0 -60px;
+
+.Block__GIF {
+  width: 190px;
+  height: auto;
+  margin: 0;
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__GIF {
+    width: 30%;
+  }
+  img {
+    margin: auto;
+  }
 }
