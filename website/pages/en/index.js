@@ -133,7 +133,7 @@ class Index extends React.Component {
               <Block.SmallTitle small>Golden Paths pave the way</Block.SmallTitle>
               <Block.Paragraph>When the right way is also the easiest way, engineers get up and running faster — and more safely</Block.Paragraph>
             </Block.TextBox>
-            <img src={`${baseUrl}img/cards.png`} />
+            <img style={{ margin: "auto" }} src={`${baseUrl}img/cards.png`} />
           </Block.Container>
         </Block>
 
