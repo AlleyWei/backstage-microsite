@@ -53,6 +53,12 @@ td {
   color: $textColor;
 }
 
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .MainContent {
   padding: 0;
   background-color: #121212;
@@ -363,7 +369,8 @@ code {
 }
 
 .Block--small {
-  height: 730px;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1430px) {
@@ -374,13 +381,15 @@ code {
 }
 
 .Block__Container {
-  flex: 1;
   max-width: 1430px;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+}
+.Block__Container--column {
+  display: inline;
 }
 
 .Block--small .stats_label_block {
@@ -429,7 +438,7 @@ code {
 
 .Block__TitleBox {
   flex: 1 1 0;
-  margin: 40px 90px;
+  margin: 40px 10px;
   align-self: flex-start;
 
   color: #fff;
@@ -465,6 +474,7 @@ code {
   padding: 0 10px;
   flex: 0 0 auto;
   align-self: flex-start;
+  margin: 40px 0 100px 0;
 
   display: flex;
   flex-flow: column nowrap;
@@ -487,7 +497,6 @@ code {
 
 .Block__TextBox--wide {
   width: 100%;
-  margin: 40px 0;
 }
 
 .Block__MediaFrame {
@@ -533,6 +542,8 @@ code {
   font-size: 24px;
   line-height: 56px;
   word-break: break-word;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .Block__Subtitle span {
@@ -567,6 +578,8 @@ code {
   font-size: 54px;
   line-height: 56px;
   word-break: break-word;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 @media only screen and (max-width: 485px) {
@@ -583,7 +596,7 @@ code {
 }
 
 @media only screen and (max-width: 1430) {
-  .Block_Title--half {
+  .Block__Title--half {
     width: 100%;
   }
 }
@@ -608,8 +621,8 @@ code {
   font-style: normal;
   font-weight: bold;
   word-break: break-word;
-  font-size: 36px;
-  line-height: 1.4em;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: -0.25px;
 }
 @media only screen and (max-width: 485px) {
@@ -665,6 +678,13 @@ code {
   line-height: 16px;
 }
 
+.Block__LinkButton--stretch {
+  margin-top: 84px;
+  margin-left: 0;
+  padding: 14px 16px;
+  width: auto;
+}
+
 .Block__LinkButton:hover {
   background-color: #1da189;
   color: #000;
@@ -706,7 +726,6 @@ code {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
 }
 
 .Block__Divider {
@@ -723,11 +742,10 @@ code {
   margin: 20px 0;
   background: #ffffff;
   border-radius: 5px;
-  margin-left: -630px;
 }
 
 .Block__Quote {
-  max-width: 739px;
+  max-width: 520px;
   padding: 20px 40px;
   margin: 0;
 
@@ -747,7 +765,6 @@ code {
   }
 
   .Block__Divider--quote {
-    margin-left: -430px;
     width: 63px;
   }
 }

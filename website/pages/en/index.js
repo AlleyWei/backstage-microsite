@@ -57,7 +57,7 @@ class Index extends React.Component {
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
-            <Breakpoint narrow={<img src={`${baseUrl}img/components-with-filter-small.png`} />} />
+            <Breakpoint narrow={<img style={{ margin: "auto" }} src={`${baseUrl}img/components-with-filter-small.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Manage all your software, all in one place </Block.SmallTitle>
@@ -70,7 +70,7 @@ class Index extends React.Component {
             </Block.TextBox>
             <Block.Image wide style={{
               background: `url(/img/components-with-filter.png)`, backgroundSize: "594px 435.5px",
-              width: "594px", height: "435.5px", margin: "-320px 105px 0 10px"
+              width: "594px", height: "435.5px", margin: "-380px 105px 0 10px"
             }} />
             <Block.TextBox small>
               <BulletLine />

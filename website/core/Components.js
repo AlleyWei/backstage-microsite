@@ -26,7 +26,7 @@ const simpleComponent = (Component, baseClassName = '', mods = []) => {
 }
 
 const Block = simpleComponent('section', 'Block', ['small', 'wrapped']);
-Block.Container = simpleComponent('div', 'Block__Container', ['reversed', 'wrapped'])
+Block.Container = simpleComponent('div', 'Block__Container', ['reversed', 'wrapped', 'column'])
 Block.TitleBox = simpleComponent('h1', 'Block__TitleBox', ['large'])
 Block.TextBox = simpleComponent('div', 'Block__TextBox', ['wide', 'small'])
 
@@ -39,7 +39,7 @@ Block.SmallestTitle = simpleComponent('h3', 'Block__SmallestTitle')
 const BulletLine = simpleComponent('div', 'BulletLine')
 
 Block.Paragraph = simpleComponent('p', 'Block__Paragraph')
-Block.LinkButton = simpleComponent('a', 'Block__LinkButton')
+Block.LinkButton = simpleComponent('a', 'Block__LinkButton', ['stretch'])
 Block.QuoteContainer = simpleComponent('div', 'Block__QuoteContainer')
 Block.Quote = simpleComponent('p', 'Block__Quote')
 Block.Divider = simpleComponent('p', 'Block__Divider', ['quote'])
