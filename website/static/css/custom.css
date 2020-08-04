@@ -382,10 +382,10 @@ code {
 
 .Block__Container {
   max-width: 1430px;
-
+  flex: 1;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .Block__Container--column {
@@ -471,10 +471,10 @@ code {
 
 .Block__TextBox {
   width: 530px;
-  padding: 0 10px;
+  padding: 0 20px 40px 20px;
+  margin: 40px 0;
   flex: 0 0 auto;
   align-self: flex-start;
-  margin: 40px 0 100px 0;
 
   display: flex;
   flex-flow: column nowrap;
@@ -571,15 +571,16 @@ code {
 }
 
 .Block__Title {
-  margin: 16px 0;
+  margin: 40px 0;
+  /* margin: 16px 0;
   color: #fff;
   font-style: normal;
-  font-weight: bold;
+  font-weight: bold;*/
   font-size: 54px;
   line-height: 56px;
   word-break: break-word;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  /* margin-block-start: 0;
+  margin-block-end: 0; */
 }
 
 @media only screen and (max-width: 485px) {
@@ -659,13 +660,14 @@ code {
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
+  margin-bottom: 60px;
 }
 
 .Block__LinkButton {
   padding: 14px 0;
   width: 176px;
   border-radius: 4px;
-  margin: auto;
+  margin: 0 auto 0 0;
   text-align: center;
   background-color: $primaryColor;
   color: #000;
@@ -690,11 +692,18 @@ code {
   color: #000;
 }
 
-@media only screen and (max-width: 1430) {
+@media only screen and (max-width: 485px) {
   .Block__LinkButton {
     align-self: center;
-    margin: 20px 0 -20px 0;
-    padding: 14px 75px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .ActionBlock__Title {
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
