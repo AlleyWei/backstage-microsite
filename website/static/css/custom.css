@@ -422,7 +422,7 @@ code {
 
 @media only screen and (max-width: 1430px) {
   .Block__Container {
-    flex-direction: unset;
+    display: block;
     overflow: hidden;
   }
 }
@@ -580,6 +580,14 @@ code {
     font-size: 24px;
     line-height: 28px;
   }
+  .Block__Title--half {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1430) {
+  .Block__Title--half {
+    width: 100%;
+  }
 }
 
 .Block__SmallTitle {
@@ -631,7 +639,7 @@ code {
 .Block__LinkButton {
   padding: 14px 30px;
   border-radius: 4px;
-
+  margin: auto;
   background-color: $primaryColor;
   color: #000;
   text-transform: uppercase;
@@ -648,7 +656,7 @@ code {
   color: #000;
 }
 
-@media only screen and (max-width: 1430px) {
+@media only screen and (max-width: 1430) {
   .Block__LinkButton {
     align-self: center;
     margin: 20px 0 -20px 0;
@@ -659,7 +667,7 @@ code {
 .Block__GraphicsContainer {
   flex: 0 0 auto;
   width: 700px;
-  margin: 20px 40px;
+  margin: 20px auto;
   max-width: calc(100vw - 80px);
 }
 
@@ -740,16 +748,24 @@ code {
 }
 
 .ActionBlock__Title {
-  margin: 15px 0;
-
+  margin: 15px 80px;
   color: #000;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 485px) {
+  .ActionBlock__Title {
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .ActionBlock__Subtitle {
-  margin: 15px 0;
+  margin: 15px 45px;
   color: #000;
   font-style: normal;
   font-weight: normal;
@@ -799,7 +815,7 @@ code {
 }
 
 .Block__Image--wide {
-  display: unset;
+  display: block;
 }
 
 @media only screen and (max-width: 1430px) {

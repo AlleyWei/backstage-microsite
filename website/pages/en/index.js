@@ -29,7 +29,7 @@ class Index extends React.Component {
             </Block.TextBox>
             <Block.Graphics>
               <Block.Graphic x={-12.5} y={16} width={120} src={`${baseUrl}img/laptop.svg`} />
-              <Block.Graphic x={5.8} y={20} width={88} src={`${baseUrl}img/screen.gif`} />
+              <Block.Graphic x={5.8} y={20} width={88} src={`${baseUrl}animations/backstage-logos-hero-8.gif`} />
             </Block.Graphics>
           </Block.Container>
         </Block>
@@ -37,12 +37,12 @@ class Index extends React.Component {
         <Block small className="stripe-top bg-black">
           <Block.Container wrapped>
             <Block.TextBox>
-
+              <img width="190" src={`${baseUrl}animations/backstage-speed-paradox-7.gif`} />
               <Block.SmallTitle small>The Speed Paradox</Block.SmallTitle>
               <Block.Paragraph>At Spotify, we’ve always believed in the speed and ingenuity that comes from having autonomous development teams. But as we learned firsthand, the faster you grow, the more fragmented and complex your software ecosystem becomes. And then everything slows down again.</Block.Paragraph>
             </Block.TextBox>
             <Block.TextBox>
-              <img src={`${baseUrl}img/backstage-speed-paradox-7.png`} />
+              <img width="190" src={`${baseUrl}animations/backstage-standards-paradox-4.gif`} />
               <Block.SmallTitle small>The Standards Paradox</Block.SmallTitle>
               <Block.Paragraph>By centralizing services and standardizing your tooling, Backstage streamlines your development environment from end to end. Instead of restricting autonomy, standardization frees your engineers from infrastructure complexity. So you can return to building and scaling, quickly and safely.</Block.Paragraph>
             </Block.TextBox>
@@ -52,10 +52,13 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-top-right" wrapped>
           <Block.Container wrapped>
+            <img width="190" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
+
             <Block.TextBox wide>
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
+
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Manage all your software, all in one place </Block.SmallTitle>
@@ -66,7 +69,10 @@ class Index extends React.Component {
               <Block.SmallTitle small>A uniform overview</Block.SmallTitle>
               <Block.Paragraph>Every team can see all the services they own and related resources (deployments, data pipelines, pull request status, etc.)</Block.Paragraph>
             </Block.TextBox>
-            <Block.Image wide src="/img/components-with-filter.png" />
+            <Block.Image wide style={{
+              background: `url(/img/components-with-filter.png)`, backgroundSize: "594px 435.5px",
+              width: "594px", height: "435.5px", margin: "-320px 105px 0 10px"
+            }} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Metadata on tap</Block.SmallTitle>
@@ -100,8 +106,8 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
+            <img width="190" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
             <Block.TextBox wide>
-              <BulletLine />
               <Block.Subtitle>Backstage software Templates <span>(alpha)</span></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>
             </Block.TextBox>
@@ -143,8 +149,9 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
+            <img width="190" src={`${baseUrl}animations/backstage-techdocs-icon-1.gif`} />
+
             <Block.TextBox wide>
-              <BulletLine />
               <Block.Subtitle>Backstage TechDocs <span>(Coming Soon)</span></Block.Subtitle>
               <Block.Title small>Docs like code</Block.Title>
             </Block.TextBox>
@@ -171,7 +178,7 @@ class Index extends React.Component {
               <Block.SmallTitle small>Easy to find and use</Block.SmallTitle>
               <Block.Paragraph>Since all your documentation is in Backstage, finding any TechDoc is just a search query away</Block.Paragraph>
             </Block.TextBox>
-            <img src={`${baseUrl}img/cards.png`} />
+            <img width="80%" style={{ margin: "auto" }} src={`${baseUrl}img/docs-like-code.png`} />
           </Block.Container>
         </Block>
 
@@ -187,8 +194,8 @@ class Index extends React.Component {
 
         <Block className="stripe-top bg-teal-bottom" wrapped>
           <Block.Container wrapped>
+            <img width="190" src={`${baseUrl}animations/backstage-plugin-icon-2.gif`} />
             <Block.TextBox wide>
-              <BulletLine />
               <Block.Subtitle>Customize Backstage with plugins</Block.Subtitle>
               <Block.Title small>An app store for your infrastructure</Block.Title>
             </Block.TextBox>

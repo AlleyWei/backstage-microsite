@@ -58,11 +58,12 @@ Block.Graphic = props => {
 
 Block.Image = props => {
     /* Coordinates and size are in % of graphics container size, e.g. width={50} is 50% of parent width */
-    const style = {
-        background: `url(${props.src})`, backgroundSize: "594px 435.5px",
-        width: "594px", height: "435.5px", margin: "-320px 105px 0 10px"
-    }
-    return <div style={{ ...style, ...(props.style || {}) }} className={`Block__Image${props.wide ? '--wide' : props.narrow ? '--narrow' : ''}`} />
+    return <div {...props} className={`Block__Image${props.wide ? '--wide' : props.narrow ? '--narrow' : ''}`} />
+}
+
+Block.GIF = props => {
+    /* Coordinates and size are in % of graphics container size, e.g. width={50} is 50% of parent width */
+    return <div {...props} className={`Block__Image${props.wide ? '--wide' : props.narrow ? '--narrow' : ''}`} />
 }
 
 const ActionBlock = simpleComponent('section', 'ActionBlock')
