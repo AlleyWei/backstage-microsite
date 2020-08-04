@@ -61,11 +61,6 @@ Block.Image = props => {
     return <div {...props} className={`Block__Image${props.wide ? '--wide' : props.narrow ? '--narrow' : ''}`} />
 }
 
-Block.GIF = props => {
-    /* Coordinates and size are in % of graphics container size, e.g. width={50} is 50% of parent width */
-    return <div {...props} className={`Block__Image${props.wide ? '--wide' : props.narrow ? '--narrow' : ''}`} />
-}
-
 const ActionBlock = simpleComponent('section', 'ActionBlock')
 ActionBlock.Title = simpleComponent('h1', 'ActionBlock__Title')
 ActionBlock.Subtitle = simpleComponent('h2', 'ActionBlock__Subtitle')

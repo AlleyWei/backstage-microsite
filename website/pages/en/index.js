@@ -53,12 +53,11 @@ class Index extends React.Component {
         <Block className="stripe-top bg-teal-top-right" wrapped>
           <Block.Container wrapped>
             <img width="190" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
-
             <Block.TextBox wide>
               <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
-
+            <Breakpoint narrow={<img src={`${baseUrl}img/components-with-filter-small.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Manage all your software, all in one place </Block.SmallTitle>
@@ -142,7 +141,7 @@ class Index extends React.Component {
           <ActionBlock.Title>
             Build your own software templates
           </ActionBlock.Title>
-          <ActionBlock.Link href={`${baseUrl}demos`}>
+          <ActionBlock.Link href={`https://github.com/spotify/backstage`}>
             Contribute
           </ActionBlock.Link>
         </ActionBlock>
@@ -187,7 +186,7 @@ class Index extends React.Component {
             Subscribe to our newsletter
           </ActionBlock.Title>
           <ActionBlock.Subtitle>TechDocs is our most used feature at Spotify. Be the first to know when the open source version ships.</ActionBlock.Subtitle>
-          <ActionBlock.Link href={`${baseUrl}demos`}>
+          <ActionBlock.Link href={`https://mailchi.mp/spotify/backstage-community`}>
             Subscribe
           </ActionBlock.Link>
         </ActionBlock>
@@ -230,7 +229,7 @@ class Index extends React.Component {
           <ActionBlock.Title>
             Build a plugin
           </ActionBlock.Title>
-          <ActionBlock.Link href='https://mailchi.mp/spotify/backstage-community'>
+          <ActionBlock.Link href='https://github.com/spotify/backstage/blob/master/docs/plugins/create-a-plugin.md'>
             Contribute
           </ActionBlock.Link>
         </ActionBlock>

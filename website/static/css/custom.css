@@ -569,10 +569,6 @@ code {
   word-break: break-word;
 }
 
-.Block__Title--half {
-  width: 50%;
-}
-
 @media only screen and (max-width: 485px) {
   .Block__Title {
     text-align: start;
@@ -580,13 +576,29 @@ code {
     font-size: 24px;
     line-height: 28px;
   }
+}
+
+.Block__Title--half {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1430) {
+  .Block_Title--half {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 485px) {
   .Block__Title--half {
     width: 100%;
   }
 }
-@media only screen and (max-width: 1430) {
-  .Block__Title--half {
-    width: 100%;
+
+@media only screen and (max-width: 485px) {
+  .Block__TextBox {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
   }
 }
 
@@ -637,9 +649,11 @@ code {
 }
 
 .Block__LinkButton {
-  padding: 14px 30px;
+  padding: 14px 0;
+  width: 176px;
   border-radius: 4px;
   margin: auto;
+  text-align: center;
   background-color: $primaryColor;
   color: #000;
   text-transform: uppercase;
@@ -775,7 +789,7 @@ code {
 
 .ActionBlock__Link {
   margin: 15px 0;
-  padding: 14px 57px;
+  padding: 14px 0;
 
   background: #fff;
   border-radius: 4px;
@@ -788,6 +802,8 @@ code {
   text-align: center;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+
+  width: 176px;
 
   color: #000000;
 }
