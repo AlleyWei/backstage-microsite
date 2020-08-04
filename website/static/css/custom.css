@@ -614,7 +614,7 @@ code {
   .Block__TextBox {
     max-width: 100%;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 20px;
   }
 }
 
@@ -690,13 +690,20 @@ code {
   line-height: 16px;
 }
 
-.Block__Title:first-child {
+.Block__Title--main {
+  margin-top: 150px;
+}
+
+.Block__TitleBox--story {
   margin-top: 150px;
 }
 
 @media only screen and (max-width: 485px) {
-  .Block__Title:first-child {
+  .Block__Title--main {
     margin-top: 40px;
+  }
+  .Block__TitleBox--story {
+    margin-top: 80px;
   }
 }
 
@@ -796,6 +803,13 @@ code {
 
   .Block__Divider--quote {
     width: 63px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Quote {
+    width: 100%;
+    max-width: 100%;
   }
 }
 

@@ -27,10 +27,10 @@ const simpleComponent = (Component, baseClassName = '', mods = []) => {
 
 const Block = simpleComponent('section', 'Block', ['small', 'wrapped']);
 Block.Container = simpleComponent('div', 'Block__Container', ['reversed', 'wrapped', 'column'])
-Block.TitleBox = simpleComponent('h1', 'Block__TitleBox', ['large'])
+Block.TitleBox = simpleComponent('h1', 'Block__TitleBox', ['large', 'story'])
 Block.TextBox = simpleComponent('div', 'Block__TextBox', ['wide', 'small'])
 
-Block.Title = simpleComponent('h1', 'Block__Title', ['half'])
+Block.Title = simpleComponent('h1', 'Block__Title', ['half', 'main'])
 Block.Subtitle = simpleComponent('h1', 'Block__Subtitle')
 
 Block.SmallTitle = simpleComponent('h2', 'Block__SmallTitle')
