@@ -358,6 +358,10 @@ code {
   background-position: center;
 }
 
+@media only screen and (max-width: 1430px) {
+  background-position: left;
+}
+
 .decoration-logos-background {
   position: absolute;
   background-image: url(../img/logos-background.svg);
