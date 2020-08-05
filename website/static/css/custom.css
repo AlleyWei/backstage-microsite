@@ -546,7 +546,7 @@ code {
   margin-bottom: 0;
 }
 
-.Block__Subtitle span {
+.Block__Subtitle a {
   color: #f037a5;
   font-style: italic;
   font-weight: normal;

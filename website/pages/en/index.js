@@ -53,7 +53,7 @@ class Index extends React.Component {
           <Block.Container wrapped>
             <Block.TextBox wide>            <img className="Block__GIF" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
 
-              <Block.Subtitle>Backstage service catalog <span>(alpha)</span></Block.Subtitle>
+              <Block.Subtitle>Backstage service catalog <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/06/22/backstage-service-catalog-alpha">(alpha)</a></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
             <Breakpoint narrow={<img style={{ margin: "auto" }} src={`${baseUrl}img/components-with-filter-small.png`} />} />
@@ -106,11 +106,10 @@ class Index extends React.Component {
           <Block.Container wrapped>
             <Block.TextBox wide>
               <img className="Block__GIF" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
-
-              <Block.Subtitle>Backstage software Templates <span>(alpha)</span></Block.Subtitle>
+              <Block.Subtitle>Backstage software Templates <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates">(alpha)</a></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>
             </Block.TextBox>
-            <Breakpoint narrow={<img src={`${baseUrl}img/spring-boot-service.png`} />} />
+            <Breakpoint narrow={<img src={`${baseUrl}img/spring-boot-wide.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Like automated getting started guides</Block.SmallTitle>
