@@ -155,8 +155,7 @@ class Index extends React.Component {
               <Block.Title small>Docs like code</Block.Title>
             </Block.TextBox>
             <Breakpoint narrow={<React.Fragment>
-              <img style={{ margin: "auto" }} src={`${baseUrl}img/techdocs.png`} />
-              <img style={{ margin: "auto" }} src={`${baseUrl}img/code.png`} />
+              <img style={{ margin: "auto" }} src={`${baseUrl}img/techdocs-static-mobile.png`} />
             </React.Fragment>} />
             <Block.TextBox small>
               <BulletLine />
@@ -181,7 +180,7 @@ class Index extends React.Component {
               <Block.SmallTitle small>Easy to find and use</Block.SmallTitle>
               <Block.Paragraph>Since all your documentation is in Backstage, finding any TechDoc is just a search query away</Block.Paragraph>
             </Block.TextBox>
-            <Breakpoint wide={<img style={{ margin: "auto" }} src={`${baseUrl}img/docs-like-code.png`} />
+            <Breakpoint wide={<img style={{ margin: "auto" }} src={`${baseUrl}img/techdocs-web.png`} />
             } />
           </Block.Container>
         </Block>
@@ -230,7 +229,7 @@ class Index extends React.Component {
               <Block.Paragraph>Building <a href="https://github.com/spotify/backstage/blob/master/docs/FAQ.md#how-do-i-find-out-if-a-plugin-already-exists">open source plugins</a> contributes to the entire Backstage ecosystem, which benefits everyone</Block.Paragraph>
             </Block.TextBox>
 
-            <Breakpoint wide={<img src={`${baseUrl}img/techs.png`} />}
+            <Breakpoint wide={<img src={`${baseUrl}img/cards-plugins.png`} />}
             />
 
           </Block.Container>
