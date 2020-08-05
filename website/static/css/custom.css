@@ -770,6 +770,12 @@ code {
   max-width: calc(100vw - 80px);
 }
 
+@media only screen and (max-width: 485px) {
+  .Block__GraphicsContainer {
+    max-width: calc(100vw - 40px);
+  }
+}
+
 .Block__Graphics {
   position: relative;
   padding-top: 75%;
