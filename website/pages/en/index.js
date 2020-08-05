@@ -109,7 +109,11 @@ class Index extends React.Component {
               <Block.Subtitle>Backstage software Templates <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates">(alpha)</a></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>
             </Block.TextBox>
-            <Breakpoint narrow={<img src={`${baseUrl}img/service-cards.png`} />} />
+            <Breakpoint narrow={
+              <Block.Graphics padding={20}>
+                <Block.Graphic y={-38} width={100} src={`${baseUrl}img/service-cards.png`} />
+              </Block.Graphics>
+            } />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Like automated getting started guides</Block.SmallTitle>
