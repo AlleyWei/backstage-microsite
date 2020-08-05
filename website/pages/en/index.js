@@ -141,6 +141,11 @@ class Index extends React.Component {
               <Block.SmallTitle small>Golden Paths pave the way</Block.SmallTitle>
               <Block.Paragraph>When the right way is also the easiest way, engineers get up and running faster — and more safely</Block.Paragraph>
             </Block.TextBox>
+            <Breakpoint wide={
+              <Block.Graphics>
+                <Block.Graphic x={-50} y={-2} width={200} src={`${baseUrl}img/cards.png`} />
+              </Block.Graphics>
+            } />
           </Block.Container>
         </Block>
 
