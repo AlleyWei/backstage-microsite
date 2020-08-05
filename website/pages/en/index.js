@@ -56,7 +56,11 @@ class Index extends React.Component {
               <Block.Subtitle>Backstage service catalog <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/06/22/backstage-service-catalog-alpha">(alpha)</a></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
-            <Breakpoint narrow={<img style={{ margin: "auto" }} src={`${baseUrl}img/components-with-filter-small.png`} />} />
+            <Breakpoint narrow={
+              <Block.Graphics padding={5}>
+                <Block.Graphic y={-8} width={100} src={`${baseUrl}img/components-with-filter-small.png`} />
+              </Block.Graphics>
+            } />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Manage all your software, all in one place </Block.SmallTitle>
@@ -159,7 +163,9 @@ class Index extends React.Component {
               <Block.Title small>Docs like code</Block.Title>
             </Block.TextBox>
             <Breakpoint narrow={<React.Fragment>
-              <img style={{ margin: "auto" }} src={`${baseUrl}img/techdocs-static-mobile.png`} />
+              <Block.Graphics padding={26}>
+                <Block.Graphic x={-1.4} y={-45} width={107} src={`${baseUrl}img/techdocs-static-mobile.png`} />
+              </Block.Graphics>
             </React.Fragment>} />
             <Block.TextBox small>
               <BulletLine />
@@ -207,8 +213,11 @@ class Index extends React.Component {
               <Block.Subtitle>Customize Backstage with plugins</Block.Subtitle>
               <Block.Title small>An app store for your infrastructure</Block.Title>
             </Block.TextBox>
-            <Breakpoint
-              narrow={<img src={`${baseUrl}img/plugins.png`} />} />
+            <Breakpoint narrow={
+              <Block.Graphics padding={10}>
+                <Block.Graphic y={-20} width={100} src={`${baseUrl}img/plugins.png`} />
+              </Block.Graphics>
+            } />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Add functionality</Block.SmallTitle>
