@@ -546,6 +546,15 @@ code {
   margin-bottom: 0;
 }
 
+.ActionBlock__Subtitle a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.Block__Subtitle a:visited {
+  color: black;
+}
+
 .Block__Subtitle a {
   color: #f037a5;
   font-style: italic;

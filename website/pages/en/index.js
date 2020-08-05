@@ -19,7 +19,7 @@ class Index extends React.Component {
 
     return (
       <main className="MainContent">
-        <Block small className="bg-black-grey">
+        <Block small className="bg-black-grey stripe-bottom">
           <Block.Container>
             <Block.TextBox>
               <Block.Title main>An open platform for building developer portals</Block.Title>
@@ -97,7 +97,7 @@ class Index extends React.Component {
           <ActionBlock.Title>
             Learn more about the service catalog
           </ActionBlock.Title>
-          <ActionBlock.Link href={`${baseUrl}demos`}>
+          <ActionBlock.Link href={`https://backstage.io/blog/2020/06/22/backstage-service-catalog-alpha`}>
             Read
           </ActionBlock.Link>
         </ActionBlock>
@@ -109,7 +109,7 @@ class Index extends React.Component {
               <Block.Subtitle>Backstage software Templates <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates">(alpha)</a></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>
             </Block.TextBox>
-            <Breakpoint narrow={<img src={`${baseUrl}img/spring-boot-wide.png`} />} />
+            <Breakpoint narrow={<img src={`${baseUrl}img/spring-boot-service.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Like automated getting started guides</Block.SmallTitle>
@@ -140,7 +140,7 @@ class Index extends React.Component {
           <ActionBlock.Title>
             Build your own software templates
           </ActionBlock.Title>
-          <ActionBlock.Link href={`https://github.com/spotify/backstage`}>
+          <ActionBlock.Link href={`https://github.com/spotify/backstage/blob/master/docs/features/software-templates/extending/index.md`}>
             Contribute
           </ActionBlock.Link>
         </ActionBlock>
@@ -190,7 +190,7 @@ class Index extends React.Component {
           <ActionBlock.Title>
             Subscribe to our newsletter
           </ActionBlock.Title>
-          <ActionBlock.Subtitle>TechDocs is our most used feature at Spotify. Be the first to know when the open source version ships.</ActionBlock.Subtitle>
+          <ActionBlock.Subtitle>TechDocs is our most used feature at Spotify. Be the first to know when <a href="https://github.com/spotify/backstage/projects/5">the open source version</a> ships.</ActionBlock.Subtitle>
           <ActionBlock.Link href={`https://mailchi.mp/spotify/backstage-community`}>
             Subscribe
           </ActionBlock.Link>
@@ -205,11 +205,11 @@ class Index extends React.Component {
               <Block.Title small>An app store for your infrastructure</Block.Title>
             </Block.TextBox>
             <Breakpoint
-              narrow={<img src={`${baseUrl}img/lighthouse.png`} />} />
+              narrow={<img src={`${baseUrl}img/plugins.png`} />} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Add functionality</Block.SmallTitle>
-              <Block.Paragraph>Want scalable website testing? Add the Lighthouse plugin. Wondering about recommended frameworks? Add the Tech Radar plugin. </Block.Paragraph>
+              <Block.Paragraph>Want scalable website testing? Add the <a href="https://backstage.io/blog/2020/04/06/lighthouse-plugin">Lighthouse</a> plugin. Wondering about recommended frameworks? Add the <a href="https://backstage.io/blog/2020/05/14/tech-radar-plugin">Tech Radar</a> plugin. </Block.Paragraph>
             </Block.TextBox>
 
             <Block.TextBox small>
@@ -227,7 +227,7 @@ class Index extends React.Component {
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Share with the community</Block.SmallTitle>
-              <Block.Paragraph>Building open source plugins contributes to the entire Backstage ecosystem, which benefits everyone</Block.Paragraph>
+              <Block.Paragraph>Building <a href="https://github.com/spotify/backstage/blob/master/docs/FAQ.md#how-do-i-find-out-if-a-plugin-already-exists">open source plugins</a> contributes to the entire Backstage ecosystem, which benefits everyone</Block.Paragraph>
             </Block.TextBox>
 
             <Breakpoint wide={<img src={`${baseUrl}img/techs.png`} />}
