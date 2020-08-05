@@ -25,7 +25,7 @@ class Index extends React.Component {
               <Block.Title main>An open platform for building developer portals</Block.Title>
               <Block.Paragraph>Powered by a centralized service catalog, Backstage restores order to your infrastructure. So your product teams can ship high-quality code quickly — without compromising autonomy.
 </Block.Paragraph>
-              <Block.LinkButton href={"https://github.com/spotify/backstage"}>GitHub</Block.LinkButton>
+              <Block.LinkButton href={"https://github.com/spotify/backstage#gettingstarted"}>GitHub</Block.LinkButton>
             </Block.TextBox>
             <Block.Graphics>
               <Block.Graphic x={-12.5} y={16} width={120} src={`${baseUrl}img/laptop.svg`} />
@@ -53,7 +53,7 @@ class Index extends React.Component {
           <Block.Container wrapped>
             <Block.TextBox wide>            <img className="Block__GIF" src={`${baseUrl}animations/backstage-service-catalog-icon-1.gif`} />
 
-              <Block.Subtitle>Backstage service catalog <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/06/22/backstage-service-catalog-alpha">(alpha)</a></Block.Subtitle>
+              <Block.Subtitle>Backstage Service Catalog <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/06/22/backstage-service-catalog-alpha">(alpha)</a></Block.Subtitle>
               <Block.Title half>Build an ecosystem, not a wilderness</Block.Title>
             </Block.TextBox>
             <Breakpoint narrow={
@@ -110,7 +110,7 @@ class Index extends React.Component {
           <Block.Container wrapped>
             <Block.TextBox wide>
               <img className="Block__GIF" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
-              <Block.Subtitle>Backstage software Templates <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates">(alpha)</a></Block.Subtitle>
+              <Block.Subtitle>Backstage Software Templates <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates">(alpha)</a></Block.Subtitle>
               <Block.Title small>Standards can set you free</Block.Title>
             </Block.TextBox>
             <Breakpoint narrow={
