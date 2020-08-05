@@ -53,9 +53,14 @@ td {
   color: $textColor;
 }
 
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .MainContent {
   padding: 0;
-  overflow-x: hidden;
   background-color: #121212;
 }
 
@@ -123,7 +128,7 @@ td {
 
 @media only screen and (min-width: 1500px) {
   .blog .headerWrapper {
-    max-width: 1400px;
+    max-width: 1430px;
   }
 }
 
@@ -232,8 +237,8 @@ code {
 }
 
 .stripe {
-  margin-top: calc(-2vw - 10px);
-  margin-bottom: calc(-2vw - 10px);
+  margin-top: calc(-2vw - 12px);
+  margin-bottom: calc(-2vw - 12px);
 
   clip-path: polygon(
     0% calc(2vw + 10px),
@@ -249,6 +254,16 @@ code {
   );
 }
 
+.BulletLine {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(
+    89.75deg,
+    #9bf0e1 -1.5%,
+    rgba(155, 240, 225, 0) 111.48%
+  );
+}
+
 .bg-black {
   background: #121212;
 }
@@ -261,11 +276,67 @@ code {
   background: linear-gradient(90.49deg, #121212 15.36%, #282828 70.44%);
 }
 
+.bg-teal-grey {
+  background: linear-gradient(70.44deg, #121212 75%, #5d817b 100%);
+}
+.bg-teal-top-right {
+  background: 
+  /* linear-gradient(
+      178.64deg,
+      rgba(255, 255, 255, 0) 57.61%,
+      rgba(255, 255, 255, 0.17) 127.71%
+    ), */ 
+    /* linear-gradient(
+      144.35deg,
+      rgba(98, 197, 179, 0) 56.68%,
+      rgba(98, 197, 179, 0.59) 109.25%
+    ), */ 
+    /* linear-gradient(
+      192.29deg,
+      rgba(155, 240, 225, 0) 54.17%,
+      rgba(155, 240, 225, 0.67) 137.34%
+    ), */ linear-gradient(
+    70.44deg,
+    rgba(18, 18, 18, 1) 55%,
+    rgba(93, 129, 123, 1) 100%
+  );
+}
+
+.bg-teal-bottom {
+  background: linear-gradient(
+      178.64deg,
+      rgba(255, 255, 255, 0) 57.61%,
+      rgba(255, 255, 255, 0.17) 127.71%
+    ),
+    linear-gradient(
+      144.35deg,
+      rgba(98, 197, 179, 0) 56.68%,
+      rgba(98, 197, 179, 0.59) 109.25%
+    ),
+    linear-gradient(
+      192.29deg,
+      rgba(155, 240, 225, 0) 54.17%,
+      rgba(155, 240, 225, 0.67) 137.34%
+    );
+}
+
 .bg-grey-black {
   background: linear-gradient(90.44deg, #404040 30.04%, #121212 67.81%);
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 485px) {
+  .bg-teal-grey {
+    background: linear-gradient(90deg, #121212 0.04%, #353535 100%);
+  }
+  .bg-teal-bottom {
+    background: linear-gradient(90deg, #121212 0.04%, #353535 100%);
+  }
+  .bg-teal-top-right {
+    background: linear-gradient(90deg, #121212 0.04%, #353535 100%);
+  }
+}
+
+@media only screen and (max-width: 1430px) {
   .bg-grey-black {
     background: linear-gradient(90.49deg, #121212 15.36%, #282828 70.44%);
   }
@@ -287,6 +358,10 @@ code {
   background-position: center;
 }
 
+@media only screen and (max-width: 1430px) {
+  background-position: left;
+}
+
 .decoration-logos-background {
   position: absolute;
   background-image: url(../img/logos-background.svg);
@@ -302,15 +377,19 @@ code {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  padding: 100px 0 80px 0;
+}
 
-  height: 900px;
+.Block--wrapped {
+  flex-flow: column wrap;
 }
 
 .Block--small {
-  height: 730px;
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1430px) {
   .Block {
     height: auto;
     padding: 40px 20px 20px 20px;
@@ -318,13 +397,15 @@ code {
 }
 
 .Block__Container {
+  max-width: 1430px;
   flex: 1;
-  max-width: 1400px;
-
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+.Block__Container--column {
+  display: inline;
 }
 
 .Block--small .stats_label_block {
@@ -350,20 +431,30 @@ code {
   }
 }
 
+@media only screen and (max-width: 1430px) {
+  .Block__Image--large {
+    display: none;
+  }
+}
+
 .Block__Container--reversed {
   flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 1400px) {
+.Block__Container--wrapped {
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1430px) {
   .Block__Container {
-    flex-direction: column;
+    display: block;
     overflow: hidden;
   }
 }
 
 .Block__TitleBox {
   flex: 1 1 0;
-  margin: 40px 90px;
+  margin: 40px 10px;
   align-self: flex-start;
 
   color: #fff;
@@ -382,22 +473,48 @@ code {
   font-size: 54px;
   line-height: 79px;
   margin-top: 20px;
-
   color: #9bf0e1;
 }
+.Block__TitleBox--story {
+  margin-top: 150px;
+  margin-left: 20px;
+}
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1430px) {
   .Block__TitleBox {
     flex: 0 0 auto;
     align-self: center;
     margin: 10px 20px;
   }
+  .Block__TitleBox--story {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__TitleBox--story {
+    margin-top: 80px;
+    margin-left: 0px;
+  }
 }
 
 .Block__TextBox {
   width: 530px;
-  margin: 40px;
-  padding: 0 10px;
+  padding: 0 20px;
+  margin: 40px 0;
+  flex: 0 0 auto;
+  align-self: flex-start;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Block__TextBox--small {
+  width: 25%;
+  margin: 0;
+  padding: 0 20x 20px;
   flex: 0 0 auto;
   align-self: flex-start;
 
@@ -408,10 +525,10 @@ code {
 }
 
 .Block__TextBox--wide {
-  flex: 1 1 0;
+  width: 100%;
 }
 
-.Block__MediaFrame{
+.Block__MediaFrame {
   width: 55%;
   height: 500px;
   padding: 20px 0;
@@ -423,13 +540,13 @@ code {
   align-items: flex-start;
 }
 
-.Block__MediaFrame iframe{
+.Block__MediaFrame iframe {
   width: 100% !important;
   height: 100% !important;
 }
 
-@media only screen and (max-width: 1400px) {
-  .Block__MediaFrame{
+@media only screen and (max-width: 1430px) {
+  .Block__MediaFrame {
     width: 100%;
   }
 
@@ -447,35 +564,172 @@ code {
   }
 }
 
+.Block__Subtitle {
+  color: #9bf0e1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 56px;
+  word-break: break-word;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ActionBlock__Subtitle a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.Block__Subtitle a {
+  color: #f037a5;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 56px;
+  word-break: break-word;
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Subtitle {
+    text-align: start;
+    word-break: keep-all;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .Block__Subtitle a {
+    color: #f037a5;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    word-break: break-word;
+  }
+  .Block__Subtitle span {
+    text-align: start;
+    word-break: keep-all;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 .Block__Title {
+  margin: 0 0 40px 0;
+  /* margin: 16px 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;*/
+  font-size: 54px;
+  line-height: 56px;
+  word-break: break-word;
+  /* margin-block-start: 0;
+  margin-block-end: 0; */
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Title {
+    text-align: start;
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.Block__Title--half {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1430) {
+  .Block__Title--half {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Title--half {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__TextBox {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+.Block__SmallTitle {
   margin: 16px 0;
   color: #fff;
   font-style: normal;
   font-weight: bold;
-  font-size: 54px;
-  line-height: 56px;
   word-break: break-word;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
 }
 @media only screen and (max-width: 485px) {
-  .Block__Title{
+  .Block__SmallTitle {
     text-align: start;
     word-break: keep-all;
-    font-size: 43px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
+
+.Block__SmallestTitle {
+  margin: 16px 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  word-break: break-word;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+}
+@media only screen and (max-width: 485px) {
+  .Block__SmallestTitle {
+    text-align: start;
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .Block__Paragraph {
   color: #fff;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
+  margin-bottom: 60px;
+}
+
+.Block__Paragraph a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Paragraph {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .Block__Paragraph a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 .Block__LinkButton {
-  padding: 14px 30px;
+  padding: 14px 0;
+  width: 176px;
   border-radius: 4px;
-
+  margin: 0 auto 0 0;
+  text-align: center;
   background-color: $primaryColor;
   color: #000;
   text-transform: uppercase;
@@ -487,24 +741,55 @@ code {
   line-height: 16px;
 }
 
+.Block__Title--main {
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Title--main {
+    margin-top: 40px;
+  }
+}
+
+.Block__LinkButton--stretch {
+  margin-top: 84px;
+  margin-left: 0;
+  padding: 14px 16px;
+  width: auto;
+}
+
 .Block__LinkButton:hover {
   background-color: #1da189;
   color: #000;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 485px) {
   .Block__LinkButton {
     align-self: center;
-    margin: 20px 0 -20px 0;
-    padding: 14px 75px;
+    margin: auto;
+    width: 265px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .ActionBlock__Title {
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
 .Block__GraphicsContainer {
   flex: 0 0 auto;
   width: 700px;
-  margin: 20px 40px;
+  margin: 20px auto;
   max-width: calc(100vw - 80px);
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__GraphicsContainer {
+    max-width: calc(100vw - 40px);
+  }
 }
 
 .Block__Graphics {
@@ -523,12 +808,11 @@ code {
 
 .Block__QuoteContainer {
   flex: 1;
-  max-width: 1400px;
+  max-width: 1430px;
 
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
 }
 
 .Block__Divider {
@@ -545,11 +829,10 @@ code {
   margin: 20px 0;
   background: #ffffff;
   border-radius: 5px;
-  margin-left: -630px;
 }
 
 .Block__Quote {
-  max-width: 739px;
+  max-width: 520px;
   padding: 20px 40px;
   margin: 0;
 
@@ -560,7 +843,7 @@ code {
   line-height: 55px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1430px) {
   .Block__Quote {
     max-width: 530px;
     margin-bottom: 20px;
@@ -569,8 +852,14 @@ code {
   }
 
   .Block__Divider--quote {
-    margin-left: -430px;
     width: 63px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__Quote {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -584,17 +873,34 @@ code {
 }
 
 .ActionBlock__Title {
-  margin: 15px 0;
-
+  margin: 15px 80px;
   color: #000;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 485px) {
+  .ActionBlock__Title {
+    word-break: keep-all;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.ActionBlock__Subtitle {
+  margin: 15px 45px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .ActionBlock__Link {
   margin: 15px 0;
-  padding: 14px 57px;
+  padding: 14px 0;
 
   background: #fff;
   border-radius: 4px;
@@ -608,7 +914,19 @@ code {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 
+  width: 176px;
+
   color: #000000;
+}
+
+@media only screen and (max-width: 485px) {
+  .ActionBlock__Link {
+    width: 265px;
+  }
+  .ActionBlock__Subtitle {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 .Breakpoint--narrow {
@@ -619,12 +937,30 @@ code {
   display: contents;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1430px) {
   .Breakpoint--narrow {
     display: contents;
   }
 
   .Breakpoint--wide {
+    display: none;
+  }
+}
+
+.Block__Image--narrow {
+  display: none;
+}
+
+.Block__Image--wide {
+  display: block;
+}
+
+@media only screen and (max-width: 1430px) {
+  .Block__Image--narrow {
+    display: block;
+  }
+
+  .Block__Image--wide {
     display: none;
   }
 }
@@ -658,4 +994,19 @@ code {
 
 .post p {
   font-size: 115%;
+}
+
+.Block__GIF {
+  width: 190px;
+  height: auto;
+  margin: 0;
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__GIF {
+    width: 30%;
+  }
+  img {
+    margin: auto;
+  }
 }

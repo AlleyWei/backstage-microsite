@@ -34,26 +34,26 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [{
-      href: "https://github.com/spotify/backstage",
-      label: "GitHub"
-    },
-    {
-      page: "blog",
-      blog: true,
-      label: "Blog"
-    },
-    {
-      page: "demos",
-      label: "Demos"
-    },
-    {
-      page: "background",
-      label: "The Spotify story"
-    },
-    {
-      href: "https://mailchi.mp/spotify/backstage-community",
-      label: "Newsletter"
-    },
+    href: "https://github.com/spotify/backstage",
+    label: "GitHub"
+  },
+  {
+    page: "blog",
+    blog: true,
+    label: "Blog"
+  },
+  {
+    page: "demos",
+    label: "Demos"
+  },
+  {
+    page: "background",
+    label: "The Spotify story"
+  },
+  {
+    href: "https://mailchi.mp/spotify/backstage-community",
+    label: "Newsletter"
+  },
   ],
 
   /* path to images for header/footer */
@@ -97,7 +97,7 @@ const siteConfig = {
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  // docsSideNavCollapsible: true,
+  docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
