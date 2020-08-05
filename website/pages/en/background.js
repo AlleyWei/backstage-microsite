@@ -49,7 +49,7 @@ const Background = (props) => {
             <Breakpoint narrow={
               <Block small>
 
-                <Block.LinkButton stretch href={"https://github.com/spotify/backstage"}>Explore Features</Block.LinkButton>
+                <Block.LinkButton stretch href={"https://backstage.io/"}>Explore Features</Block.LinkButton>
 
 
               </Block>
@@ -65,7 +65,7 @@ const Background = (props) => {
             <Block.Quote>
               One place for everything. Accessible to everyone.
               </Block.Quote>
-            <Block.LinkButton stretch href={"https://github.com/spotify/backstage"}>Explore Features</Block.LinkButton>
+            <Block.LinkButton stretch href={"https://backstage.io/"}>Explore Features</Block.LinkButton>
 
           </Block.QuoteContainer>
 
