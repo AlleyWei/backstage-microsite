@@ -154,10 +154,10 @@ class Index extends React.Component {
               <Block.Subtitle>Backstage TechDocs <span>(Coming Soon)</span></Block.Subtitle>
               <Block.Title small>Docs like code</Block.Title>
             </Block.TextBox>
-            <Breakpoint narrow={<>
+            <Breakpoint narrow={<React.Fragment>
               <img style={{ margin: "auto" }} src={`${baseUrl}img/techdocs.png`} />
               <img style={{ margin: "auto" }} src={`${baseUrl}img/code.png`} />
-            </>} />
+            </React.Fragment>} />
             <Block.TextBox small>
               <BulletLine />
               <Block.SmallTitle small>Free documentation</Block.SmallTitle>
