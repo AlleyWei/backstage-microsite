@@ -44,11 +44,17 @@ Block.QuoteContainer = simpleComponent('div', 'Block__QuoteContainer')
 Block.Quote = simpleComponent('p', 'Block__Quote')
 Block.Divider = simpleComponent('p', 'Block__Divider', ['quote'])
 Block.MediaFrame = simpleComponent('div', 'Block__MediaFrame')
-Block.Graphics = ({ children }) => (
-    <div className='Block__GraphicsContainer'>
-        <div className='Block__Graphics' children={children} />
-    </div>
-)
+Block.Graphics = ({ padding, children }) => {
+    const style = {}
+    if (padding) {
+        style.padding = `${padding}% 0`
+    }
+    return (
+        <div className='Block__GraphicsContainer' style={style}>
+            <div className='Block__Graphics' children={children} />
+        </div>
+    )
+}
 Block.Graphic = props => {
     /* Coordinates and size are in % of graphics container size, e.g. width={50} is 50% of parent width */
     const { x = 0, y = 0, width = 0, src, className = '' } = props
