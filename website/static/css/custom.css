@@ -324,6 +324,18 @@ code {
   background: linear-gradient(90.44deg, #404040 30.04%, #121212 67.81%);
 }
 
+@media only screen and (max-width: 485px) {
+  .bg-teal-grey {
+    background: linear-gradient(90deg, #121212 0.04%, #353535 100%);
+  }
+  .bg-teal-bottom {
+    background: linear-gradient(90deg, #121212 0.04%, #353535 100%);
+  }
+  .bg-teal-top-right {
+    background: linear-gradient(90deg, #121212 0.04%, #353535 100%);
+  }
+}
+
 @media only screen and (max-width: 1430px) {
   .bg-grey-black {
     background: linear-gradient(90.49deg, #121212 15.36%, #282828 70.44%);
