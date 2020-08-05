@@ -457,8 +457,11 @@ code {
   font-size: 54px;
   line-height: 79px;
   margin-top: 20px;
-
   color: #9bf0e1;
+}
+.Block__TitleBox--story {
+  margin-top: 150px;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 1430px) {
@@ -466,6 +469,16 @@ code {
     flex: 0 0 auto;
     align-self: center;
     margin: 10px 20px;
+  }
+  .Block__TitleBox--story {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .Block__TitleBox--story {
+    margin-top: 80px;
+    margin-left: 0px;
   }
 }
 
@@ -551,10 +564,6 @@ code {
   text-decoration: underline;
 }
 
-.Block__Subtitle a:visited {
-  color: black;
-}
-
 .Block__Subtitle a {
   color: #f037a5;
   font-style: italic;
@@ -571,6 +580,14 @@ code {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 10px;
+  }
+  .Block__Subtitle a {
+    color: #f037a5;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    word-break: break-word;
   }
   .Block__Subtitle span {
     text-align: start;
@@ -623,7 +640,7 @@ code {
   .Block__TextBox {
     max-width: 100%;
     margin: 0;
-    padding: 20px 20px;
+    padding: 20px 0;
   }
 }
 
@@ -674,11 +691,20 @@ code {
   margin-bottom: 60px;
 }
 
+.Block__Paragraph a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 485px) {
   .Block__Paragraph {
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 10px;
+  }
+  .Block__Paragraph a {
+    color: inherit;
+    text-decoration: underline;
   }
 }
 
@@ -703,16 +729,9 @@ code {
   margin-top: 150px;
 }
 
-.Block__TitleBox--story {
-  margin-top: 150px;
-}
-
 @media only screen and (max-width: 485px) {
   .Block__Title--main {
     margin-top: 40px;
-  }
-  .Block__TitleBox--story {
-    margin-top: 80px;
   }
 }
 
@@ -881,6 +900,10 @@ code {
 @media only screen and (max-width: 485px) {
   .ActionBlock__Link {
     width: 265px;
+  }
+  .ActionBlock__Subtitle {
+    font-size: 15px;
+    line-height: 18px;
   }
 }
 
