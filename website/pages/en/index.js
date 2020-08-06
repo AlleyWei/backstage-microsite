@@ -25,7 +25,7 @@ class Index extends React.Component {
               <Block.Title main>An open platform for building developer portals</Block.Title>
               <Block.Paragraph>Powered by a centralized service catalog, Backstage restores order to your infrastructure. So your product teams can ship high-quality code quickly — without compromising autonomy.
 </Block.Paragraph>
-              <Block.LinkButton href={"https://github.com/spotify/backstage#gettingstarted"}>GitHub</Block.LinkButton>
+              <Block.LinkButton href={"https://github.com/spotify/backstage#getting-started"}>GitHub</Block.LinkButton>
             </Block.TextBox>
             <Block.Graphics>
               <Block.Graphic x={-12.5} y={16} width={120} src={`${baseUrl}img/laptop.svg`} />
