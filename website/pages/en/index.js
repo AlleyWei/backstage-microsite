@@ -101,7 +101,7 @@ class Index extends React.Component {
           <ActionBlock.Title>
             Learn more about the service catalog
           </ActionBlock.Title>
-          <ActionBlock.Link href={`https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates`}>
+          <ActionBlock.Link href={`https://backstage.io/blog/2020/06/22/backstage-service-catalog-alpha`}>
             Read
           </ActionBlock.Link>
         </ActionBlock>
