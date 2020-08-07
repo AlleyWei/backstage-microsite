@@ -111,7 +111,7 @@ class Index extends React.Component {
             <Block.TextBox wide>
               <img className="Block__GIF" src={`${baseUrl}animations/backstage-software-templates-icon-5.gif`} />
               <Block.Subtitle>Backstage Software Templates <a title="Submit feedback for this feature. Click to learn more about this release." href="https://backstage.io/blog/2020/08/05/announcing-backstage-software-templates">(alpha)</a></Block.Subtitle>
-              <Block.Title small>Standards can set you free</Block.Title>
+              <Block.Title small>Standardization can set you free</Block.Title>
             </Block.TextBox>
             <Breakpoint narrow={
               <Block.Graphics padding={20}>
